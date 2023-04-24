@@ -1,0 +1,202 @@
+
+*{
+    margin: 0cm;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+.header {
+    height: 3.5rem
+    
+}
+
+.main-cards {
+    background-color: rgb(117, 136, 236);
+    padding: 5rem;
+}
+
+.cards {
+    display: flex;
+    gap: 1rem;
+
+}
+
+.card-img{
+    width: 100%;
+}
+
+
+.card{
+    flex: 1;
+    background-color: rgb(80, 106, 238);
+    text-align: center;
+}
+.main-cards h1 {
+    color: #151515;
+    text-align: center;
+    
+}
+
+.link {
+    text-decoration: none;
+    font-family: fantasy;
+    color:rgb(117, 136, 236);
+    font-size: large;
+ }
+
+@media  (max-width: 600px){
+    .cards {
+        flex-direction: column ;
+    }
+}
+.container main-mapas {
+    background-color: rgb(80, 106, 238); 
+}
+.link {
+    text-decoration: none;
+   
+}
+.accordion-item {
+    font-size: medium;
+
+}
+#accordionExample {
+    margin: 3rem;
+}
+.accordion-item {
+    font-size: larger;
+}
+.accordion-header  {
+    font-size: x-large;
+    color: black;
+    background-color:rgb(80, 106, 238) ;
+}
+
+.contacto {
+    margin: 3rem;
+  
+}
+.accordion-buttom {
+    color: rgb(117, 136, 236);
+}
+
+
+.main-serv{
+    min-height: 100hv;
+    display: grid;
+    grid-template-areas: 
+        "logo logo logo   info-servicios info-servicios"
+        "logo logo logo  info-servicios info-servicios"
+}
+
+.info-servicios{
+    padding: 2rem;
+    display: flex;
+    font-size: x-large;
+}
+.info-servicios h2 {
+    color: blue;
+    display: flex;
+     justify-content: center;
+}
+
+.container footer {
+    display: flex;
+    
+    
+}
+
+.container-nos {
+    min-height: 100%;
+    display: grid;
+    grid-template-areas: 
+    "logo-nos logo-nos  acordionacordion"
+    "logo-nos logo-nos                   "
+}
+.footer {
+    background-color: black;
+    padding-top: 2rem
+    ;
+}
+.contacto {
+    color: white;
+}
+.redes {
+    display:flex;   
+
+}
+.red-item {
+    margin: 1rem;
+}
+   
+.container-inicio  a {
+    background-color: rgb(80, 106, 238);
+    color: white;
+    text-decoration: none;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin: 2rem;
+    
+}
+.container-inicio {
+    display: flex;
+    justify-content: flex-end;
+
+}
+.inicio{
+    padding-left: 2rem;
+    margin: 2rem;
+
+}
+@media  (max-width: 600px){
+    .footetr {
+        flex-direction: column ;
+    }
+}
+
+.container-contacto h4 h5{
+    font-size: medium;
+}
+.main {
+    background-color: rgb(117, 136, 236)
+}
+
+.container main-mapas {
+    display: flex;
+    text-decoration: none;
+    padding: 2rem;
+}
+
+footer {
+    background-color: black;
+   
+}
+
+.footer-main-title{
+    color: white;
+    padding-top: 18px;
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.secfooter {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 18px;
+}
+
+.secfooter h3 {
+    padding:8px;
+}
+
+.contact {
+    font-size: 20px;
+}
+
+hr {
+    width: 40%;
+}
+.main-serv {
+    background-color: rgb(117, 136, 236);
+    
+}
