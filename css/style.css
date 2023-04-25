@@ -5,14 +5,68 @@
     box-sizing: border-box;
    
 }
+.logo {
+    min-width: 100vh;
+}
+
 .header {
     height: 3.5rem
     
 }
+.container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  
+    
+}
 
-.main-cards {
+.main-items {
     background-color: rgb(117, 136, 236);
-    padding: 5rem;
+    padding-top: 2rem;
+    display: flex;
+   
+}
+
+
+.title-sailing{
+    position: relative;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-style: oblique;
+    padding-top: 3rem;
+     
+}
+.container-sailing {
+    background-color:rgb(117, 136, 236);
+   
+}
+.redes {
+     display: flex;
+     align-items: baseline;
+}
+
+ 
+.container .item {
+    background-color: rgb(80, 106, 238);
+}
+.container * {
+    padding: 1rem;
+    margin: 1rem;
+    background-color: rgb(80, 106, 238);
+    
+}
+
+
+
+.card-info {
+    display: grid;
+    grid-row: auto;
+    padding-left: 1rem;
+    
+
 }
 
 .cards {
@@ -30,6 +84,16 @@
     flex: 1;
     background-color: rgb(80, 106, 238);
     text-align: center;
+    margin: 1rem;
+}
+.card h4 {
+    font-size: medium;
+}
+.main-cards {
+    background-color: rgb(117, 136, 236);
+    padding-bottom: 2rem;
+   
+
 }
 .main-cards h1 {
     color: #151515;
@@ -49,9 +113,7 @@
         flex-direction: column ;
     }
 }
-.container main-mapas {
-    background-color: rgb(80, 106, 238); 
-}
+
 .link {
     text-decoration: none;
    
@@ -60,6 +122,7 @@
     font-size: medium;
 
 }
+
 #accordionExample {
     margin: 3rem;
 }
@@ -76,18 +139,6 @@
     margin: 3rem;
   
 }
-.accordion-buttom {
-    color: rgb(117, 136, 236);
-}
-
-
-.main-serv{
-    min-height: 100hv;
-    display: grid;
-    grid-template-areas: 
-        "logo logo logo   info-servicios info-servicios"
-        "logo logo logo  info-servicios info-servicios"
-}
 
 .info-servicios{
     padding: 2rem;
@@ -99,6 +150,10 @@
     display: flex;
      justify-content: center;
 }
+.logo-nos {
+    width: 100%;
+}
+
 
 .container footer {
     display: flex;
@@ -106,13 +161,6 @@
     
 }
 
-.container-nos {
-    min-height: 100%;
-    display: grid;
-    grid-template-areas: 
-    "logo-nos logo-nos  acordionacordion"
-    "logo-nos logo-nos                   "
-}
 .footer {
     background-color: black;
     padding-top: 2rem
@@ -138,11 +186,16 @@
     margin: 2rem;
     
 }
-.container-inicio {
+.container-sailing{
     display: flex;
     justify-content: flex-end;
 
 }
+.carousel-item {
+    opacity: 75%;
+
+}
+
 .inicio{
     padding-left: 2rem;
     margin: 2rem;
@@ -161,11 +214,30 @@
     background-color: rgb(117, 136, 236)
 }
 
-.container main-mapas {
-    display: flex;
-    text-decoration: none;
-    padding: 2rem;
+
+.inicio-container {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
 }
+
+.item {
+    background: rgb(117, 136, 236);
+
+}
+.mapas {
+    margin: 5rem;
+   
+}
+.container-main-mapas {
+
+  background-color: rgb(117, 136, 236);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.info-mapas  h4{
+    font-style: 2rem;
+}
+
 
 footer {
     background-color: black;
@@ -187,6 +259,7 @@ footer {
 
 .secfooter h3 {
     padding:8px;
+    font-size:medium;
 }
 
 .contact {
@@ -196,7 +269,4 @@ footer {
 hr {
     width: 40%;
 }
-.main-serv {
-    background-color: rgb(117, 136, 236);
-    
-}
+
