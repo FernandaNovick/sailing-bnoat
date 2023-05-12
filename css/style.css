@@ -5,59 +5,325 @@
     box-sizing: border-box;
    
 }
-.logo {
-    min-width: 100vh;
+
+@media  (max-width: 600px){
+    .cards {
+        flex-direction: column ;
+    }
 }
+
+@media  (max-width: 600px){
+    .footetr {
+        flex-direction: column ;
+    }
+}
+
+
+/**tamaño header de todos**/
 
 .header {
     height: 3.5rem
     
 }
-.container {
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-  
+/**main de todos+*/
+
+.main {
+    background-color: rgb(112, 118, 145)
+}
+
+/**nosotros**/
+
+.main-nos {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "imagen imagen acordion acordion"
+        "imagen imagen contacto contacto"
+       ;
+       
+}
+.imagen {
+    width: 100%;
+
+}
+.imagen p {
+    font-family: cursive;
+    font-size: 2rem;
+    flex-direction: center;
+    padding-top: 2rem;
+}
+.phone {
+    width: 6rem;
+   margin-left: 8rem;
+   margin-top: 8rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.acordion {
+    background-color: rgb(112, 118, 145);
+    grid-area: acordion;
+}
+.accordion-body {
+
+    font-size: x-large
+
+
+}
+.imagen {
+    grid-area: imagen;
+}
+
+
+.contacto {
+    background-color: rgb(73, 79, 110);
+    grid-area: contacto;
+   
+}
+.contacto a {
+    text-decoration: none;
+    color: black;
     
 }
 
-.main-items {
-    background-color: rgb(117, 136, 236);
-    padding-top: 2rem;
+.main-nos h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(2, 8, 37);
+    font-size: xx-large;
     display: flex;
-   
+    justify-content: center;
+    padding: 4rem;
+
+}
+.accordion-button {
+    background-color:rgb(73, 79, 110);
 }
 
+.acordion {
+    background-color:rgb(137, 138, 141);
+}
+
+
+/**contacto**/
+
+
+
+.main-cont {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+       "info-contacto  flotantes"
+       "info-contacto  flotantes"
+
+}
+
+
+.main-cont h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(2, 8, 37);
+    font-size: xx-large;
+    padding: 4rem;
+
+}
+
+
+.flotantes {
+    background-color: rgb(112, 118, 145);
+    grid-area: flotantes;
+}
+
+
+.info-contacto {
+    background-color: black;
+    grid-area: info-contacto;
+    color: white;
+    padding-top: 5rem;
+    
+}
+.contacto-pagina {
+    padding: 3rem;
+}
+    
+           
+ .reedes {
+    display: flex;
+    justify-content:end;
+    padding-top: 10rem;
+    padding-right: 2rem;
+
+ }
+.contacto-pagina h1 {
+    font-family: cursive;
+    font-size: 3rem;
+    padding-bottom: 3rem;
+ }
+
+.flotantes  h1 {
+    font-family: cursive;
+    font-size: 4rem;
+    padding-bottom: 3rem;
+
+}
+
+.flotantes {
+    padding-block-start: 6rem;
+}
+
+
+
+/** servicios**/
+
+.main-serv {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "imagen imagen promociones promociones"
+        "imagen  imagen practicas salidas"
+       ;
+       
+}
+
+
+.imagen {
+    width: 100%;
+    background-color: rgb(188, 197, 242);
+    grid-area: imagen;
+
+}
+.imagen p {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.promociones {
+    background-color: rgb(112, 118, 145);
+    grid-area: promociones;
+}
+.main-serv p {
+    font-family: cursive;
+    color: rgb(2, 8, 37);
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+.main-serv .imagen {
+    width: 100%;
+}
+.promociones h2 {
+    font-family: cursive;
+    color: rgb(2, 8, 37);
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    
+       
+}
+.salidas {
+    background-color: rgb(73, 79, 110);
+    grid-area: salidas;
+}
+.salidas h2 {
+    font-family: cursive;
+    color: rgb(2, 8, 37);
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    
+}
+.practicas {
+    background-color: rgb(137, 138, 141);
+    grid-area: practicas;
+}
+.practicas h2 {
+    font-family: cursive;
+    color: rgb(2, 8, 37);
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    
+}
+
+
+
+
+
+
+/** bienvenidos encima de carrusel e index**/
 
 .title-sailing{
-    position: relative;
-    display: inline-block;
     display: flex;
-    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 10rem;
     flex-direction: column;
-    font-style: oblique;
-    padding-top: 3rem;
-     
+    
 }
-.container-sailing {
-    background-color:rgb(117, 136, 236);
-   
+.title-sailing h2 {
+    font-family: sans-serif;
+    font-size: 4rem;
 }
-.redes {
-     display: flex;
-     align-items: baseline;
+.title-sailing h3 {
+    font-size: 2rem;
+    font-family: cursive;
+
 }
+
 
  
 .container .item {
-    background-color: rgb(80, 106, 238);
+    background-color: rgb(36, 38, 48);
+    
 }
 .container * {
     padding: 1rem;
     margin: 1rem;
-    background-color: rgb(80, 106, 238);
+   
     
 }
+
+
+
+.main-items {
+    background-color: rgb(83, 84, 88);
+    padding-top: 2rem;
+    display: flex;
+    
+}
+
+
+.carousel-item {
+    opacity: 75%;
+
+}
+.item h2 {
+    font-family: cursive;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+ 
+/**promociones**/
+.main-cards {
+    min-height: 100vh;
+   
+}
+
+
 
 
 
@@ -82,15 +348,19 @@
 
 .card{
     flex: 1;
-    background-color: rgb(80, 106, 238);
+    background-color: rgb(134, 138, 153);
     text-align: center;
-    margin: 1rem;
+    margin: 3rem;
 }
-.card h4 {
-    font-size: medium;
+.card h4  {
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.card  p {
+    font-size: x-large;
 }
 .main-cards {
-    background-color: rgb(117, 136, 236);
+    background-color: rgb(60, 61, 67);
     padding-bottom: 2rem;
    
 
@@ -98,79 +368,39 @@
 .main-cards h1 {
     color: #151515;
     text-align: center;
+    font-family:cursive;
+    font-size: 3rem;
+    
     
 }
 
 .link {
     text-decoration: none;
     font-family: fantasy;
-    color:rgb(117, 136, 236);
+    color:rgb(137, 138, 141);
     font-size: large;
  }
-
-@media  (max-width: 600px){
-    .cards {
-        flex-direction: column ;
-    }
-}
-
-.link {
-    text-decoration: none;
-   
-}
-.accordion-item {
-    font-size: medium;
+ .item {
+    background: rgb(5, 22, 69);
+    color: white;
 
 }
 
-#accordionExample {
-    margin: 3rem;
-}
-.accordion-item {
-    font-size: larger;
-}
-.accordion-header  {
-    font-size: x-large;
-    color: black;
-    background-color:rgb(80, 106, 238) ;
-}
-
-.contacto {
-    margin: 3rem;
-  
-}
-
-.info-servicios{
-    padding: 2rem;
-    display: flex;
-    font-size: x-large;
-}
-.info-servicios h2 {
-    color: blue;
-    display: flex;
-     justify-content: center;
-}
-.logo-nos {
-    width: 100%;
-}
 
 
-.container footer {
-    display: flex;
-    
-    
-}
+
+/** footer**/
 
 .footer {
     background-color: black;
-    padding-top: 2rem
-    ;
+    padding-top: 2rem;
 }
-.contacto {
-    color: white;
-}
+
+
+
 .redes {
-    display:flex;   
+    display:flex;
+    justify-content: end;   
 
 }
 .red-item {
@@ -178,7 +408,7 @@
 }
    
 .container-inicio  a {
-    background-color: rgb(80, 106, 238);
+    background-color: rgb(112, 113, 117);
     color: white;
     text-decoration: none;
     padding-left: 2rem;
@@ -186,63 +416,12 @@
     margin: 2rem;
     
 }
-.container-sailing{
+.container-inicio {
     display: flex;
     justify-content: flex-end;
 
 }
-.carousel-item {
-    opacity: 75%;
 
-}
-
-.inicio{
-    padding-left: 2rem;
-    margin: 2rem;
-
-}
-@media  (max-width: 600px){
-    .footetr {
-        flex-direction: column ;
-    }
-}
-
-.container-contacto h4 h5{
-    font-size: medium;
-}
-.main {
-    background-color: rgb(117, 136, 236)
-}
-
-
-.inicio-container {
-     display: grid;
-     grid-template-columns: 1fr 1fr 1fr;
-}
-
-.item {
-    background: rgb(117, 136, 236);
-
-}
-.mapas {
-    margin: 5rem;
-   
-}
-.container-main-mapas {
-
-  background-color: rgb(117, 136, 236);
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-.info-mapas  h4{
-    font-style: 2rem;
-}
-
-
-footer {
-    background-color: black;
-   
-}
 
 .footer-main-title{
     color: white;
@@ -262,8 +441,11 @@ footer {
     font-size:medium;
 }
 
+
+
+
 .contact {
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 hr {
