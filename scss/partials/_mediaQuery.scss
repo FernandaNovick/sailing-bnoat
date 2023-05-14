@@ -1,0 +1,17 @@
+@media  (max-width: 600px){
+    .cards {
+        flex-direction: column ;
+    }
+}
+@mixin mobile {
+
+    @media screen and (max-width: 576px) {
+        @content;
+     }
+}
+@mixin desk {
+
+    @media screen and (max-width: 760px) {
+        @content;
+     }
+}

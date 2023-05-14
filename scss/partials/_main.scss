@@ -1,0 +1,69 @@
+.main {
+    background-color: $colorUno;
+
+}
+
+
+
+.main-items {
+    background-color: $colorDos;
+    padding-top: 2rem;
+    display: flex;
+    
+}
+.main-cards {
+    min-height: 100vh;
+    background-color: $colorTres;
+    padding-bottom: 2rem;
+    h1 {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: $colorOscuro;
+        font-size: xx-large;
+        display: flex;
+        justify-content: center;
+        padding: 2rem;
+      
+
+}
+    .cards {
+        display: flex;
+        gap: 0.5rem;
+        .card{
+            flex: 1;
+            background-color: $colorUno;
+            text-align: center;
+            margin: 1rem;
+            
+            .card-img{
+                width: 100%;
+                .link {
+                    text-decoration: none;
+                    font-family: fantasy;
+                    color:$colorUno;
+                    font-size: large;
+                 }
+            }
+            .card h4  {
+                font-family: cursive;
+                color: $colorOscuro;
+                font-size: x-large;
+                display: flex;
+                justify-content: center;
+            
+            }
+            .card  p {
+                font-family: cursive;
+                color: $colorOscuro;
+                font-size:large;
+                display: flex;
+                justify-content: center;
+                padding: 2rem;
+                
+            }
+
+        }
+    
+    }
+
+   
+}

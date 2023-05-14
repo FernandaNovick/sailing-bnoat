@@ -1,0 +1,50 @@
+.footer {
+    background-color: black;
+    padding-top: 2rem;
+    
+    .secfooter {
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 18px;
+        .secfooter h3 {
+            padding:8px;
+            font-size: small;
+        }
+        
+
+    .contact {
+    font-size: 1.6rem;
+    }
+
+    hr {
+    width: 40%;
+    }
+
+    }
+
+    .container-inicio {
+    display: flex;
+    justify-content: flex-end;
+    .container-inicio  a {
+        background-color: $colorUno;
+        color: white;
+        text-decoration: none;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin: 2rem;
+        
+    }
+    .redes {
+        display:flex;
+        justify-content: end;
+        .red-item {
+            margin: 1rem;
+        } 
+
+    
+    }
+
+
+}
+
+}

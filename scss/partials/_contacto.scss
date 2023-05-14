@@ -1,0 +1,72 @@
+.main-cont {
+    min-height: 100vh;
+    display: grid;
+   
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+       "info-contacto  flotantes"
+       "info-contacto  flotantes";
+
+   
+
+
+    .info-contacto {
+        background-color: black;
+        grid-area: info-contacto;
+        color: white;
+        padding-top: 5rem;
+        .contacto-pagina {
+            padding: 3rem;
+            @include mobile {
+                flex-direction:column ;
+            }
+        
+
+            h1 {
+                font-family: cursive;
+                font-size: 3rem;
+                padding-bottom: 3rem;
+               
+             }
+             h3 {
+                font-family: cursive;
+                font-size: 3rem;
+                padding-bottom: 3rem;
+                
+             }
+        }
+        .reedes {
+            display: flex;
+            justify-content:end;
+            padding-top: 10rem;
+            padding-right: 2rem;
+        
+         }
+        
+    }
+    
+     .flotantes {
+        background-color: $colorUno;
+        grid-area: flotantes;
+        padding-block-start: 6rem;
+        @include mobile {
+            flex-direction:column ;
+        }
+        
+        h2 {
+            font-family: cursive;
+            font-size: 3rem;
+            padding-bottom: 3rem;
+            color: $colorOscuro;
+
+        
+        }
+       
+    }
+    
+      
+
+}
+         

@@ -1,0 +1,53 @@
+.main-serv {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows:  1fr 1fr ;
+    gap: 15px;
+    @include mobile {
+        flex-direction: column;
+    }
+    grid-template-areas: 
+   
+     "salidas promociones"
+     " imagen practicas" ;
+        h2 {
+            font-family:Arial, Helvetica, sans-serif;
+            color: $colorOscuro;
+            font-size: x-large;
+            display: flex;
+            justify-content: center;
+            padding: 2rem;
+            
+        }
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            color: $colorOscuro;
+            font-size: medium;
+            display: flex;
+            justify-content: center;
+            padding: 2rem;
+        }
+      
+        .imagen {
+            background-color:$colorUno;
+            grid-area: imagen;
+           
+        }
+        .practicas {
+            background-color: $colorUno;
+            grid-area: practicas;
+           
+        }
+        .promociones {
+            background-color: rgb(112, 118, 145);
+            grid-area: promociones;
+        }
+        .salidas {
+            background-color: rgb(80, 81, 89);
+            grid-area: salidas;
+        }
+
+    
+       
+}
