@@ -1,14 +1,22 @@
 .main-nos {
         background-color:$colorUno ;
-        display: flex;
+        display:flex;
         gap: 0.5rem;
+        @include mobile {
+            flex-direction: column;
+        } 
+        .tarjeta {
+            margin: 2rem;
+            padding: 1rem;
+            border-radius: 0.5rem;
+        }
+
         .imagenn {
-            grid-area: imagenn;
             margin: 1rem;
-            background-color: $coloruno;
+            background-color: $colorUno;
             h2  {
                 font-family: cursive;
-                color: $colorOscuro;
+                color: $coloroscuro;
                 font-size: xx-large;
                 display: flex;
                 justify-content: center;
@@ -26,7 +34,6 @@
         
         .acordion {
             background-color: $colorUno;
-            grid-area: acordion;
             width: 100%;
             .accordion-body {
         
@@ -39,8 +46,7 @@
            
         }
         .contacto {
-            background-color: $colorUno;
-            grid-area: contacto;
+            background-color: $colorTres;
             a {
                 text-decoration: none;
                 color: black;
