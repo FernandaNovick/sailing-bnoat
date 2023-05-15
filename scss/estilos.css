@@ -109,6 +109,7 @@ h1 {
 .main-cont {
   min-height: 100vh;
   display: flex;
+  background-color: rgb(83, 84, 88);
 }
 @media screen and (max-width: 870px) {
   .main-cont {
@@ -117,18 +118,19 @@ h1 {
 }
 .main-cont .info-contacto {
   background-color: black;
-  color: white;
   padding-top: 5rem;
-  margin: 1rem;
+  margin: 2rem;
   width: 80vh;
 }
 .main-cont .info-contacto .contacto-pagina {
   padding: 3rem;
+  color: white;
 }
 .main-cont .info-contacto .contacto-pagina h1 {
   font-family: cursive;
-  font-size: 1.5rem;
-  padding-bottom: 2rem;
+  font-size: 3rem;
+  padding-bottom: 3rem;
+  color: white;
 }
 .main-cont .info-contacto .contacto-pagina h3 {
   font-family: cursive;
@@ -143,7 +145,7 @@ h1 {
 }
 .main-cont .flotantes {
   width: 80vh;
-  margin: 1rem;
+  margin: 2rem;
   background-color: rgb(112, 118, 145);
   -webkit-padding-before: 6rem;
           padding-block-start: 6rem;

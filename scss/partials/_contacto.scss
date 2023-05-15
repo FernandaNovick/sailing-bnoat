@@ -1,25 +1,29 @@
 .main-cont {
     min-height: 100vh;
     display: flex;
+    background-color: $colorDos;
        @include mobile {
         flex-direction: column;
     } 
 
     .info-contacto {
         background-color: black;
-        color: white;
+       
         padding-top: 5rem;
-        margin: 1rem;
+        margin: 2rem;
         width: 80vh;
         .contacto-pagina {
             padding: 3rem;
+            color: white;
           
             h1 {
                 font-family: cursive;
-                font-size: 1.5rem;
-                padding-bottom: 2rem;
-               
-             }
+                font-size: 3rem;
+                padding-bottom: 3rem;
+                color: white
+    
+            
+            }
              h3 {
                 font-family: cursive;
                 font-size: 1.5rem;
@@ -39,7 +43,7 @@
     
      .flotantes {
         width:80vh;
-        margin: 1rem;
+        margin: 2rem;
         background-color: $colorUno;
         padding-block-start: 6rem;
         @include mobile {
