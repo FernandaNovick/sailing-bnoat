@@ -17,8 +17,7 @@
   background-color: rgb(60, 61, 67);
   padding-bottom: 2rem;
 }
-
-h1 {
+.main-cards h1 {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: rgb(2, 8, 37);
   font-size: xx-large;
@@ -26,45 +25,44 @@ h1 {
   justify-content: center;
   padding: 2rem;
 }
-
-.cards {
+.main-cards .cards {
   display: flex;
   gap: 0.5rem;
 }
 @media screen and (max-width: 870px) {
-  .cards {
+  .main-cards .cards {
     flex-direction: column;
   }
-  .cards .card {
-    flex: 1;
-    background-color: rgb(112, 118, 145);
-    text-align: center;
-    margin: 1rem;
-  }
-  .cards .card .card-img {
-    width: 100%;
-  }
-  .cards .card .card-img .link {
-    text-decoration: none;
-    font-family: fantasy;
-    color: rgb(112, 118, 145);
-    font-size: large;
-  }
-  .cards .card .card h4 {
-    font-family: cursive;
-    color: rgb(2, 8, 37);
-    font-size: x-large;
-    display: flex;
-    justify-content: center;
-  }
-  .cards .card .card p {
-    font-family: cursive;
-    color: rgb(2, 8, 37);
-    font-size: large;
-    display: flex;
-    justify-content: center;
-    padding: 2rem;
-  }
+}
+.main-cards .cards .card {
+  flex: 1;
+  background-color: rgb(112, 118, 145);
+  text-align: center;
+  margin: 1rem;
+}
+.main-cards .cards .card .card-img {
+  width: 100%;
+}
+.main-cards .cards .card h4 {
+  font-family: cursive;
+  color: rgb(2, 8, 37);
+  font-size: x-large;
+  display: flex;
+  justify-content: center;
+}
+.main-cards .cards .card p {
+  font-family: cursive;
+  color: rgb(2, 8, 37);
+  font-size: large;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+.main-cards .cards .card .link {
+  text-decoration: none;
+  font-family: fantasy;
+  color: rgb(112, 118, 145);
+  font-size: large;
 }
 
 .footer {
@@ -120,43 +118,38 @@ h1 {
   background-color: black;
   padding-top: 5rem;
   margin: 2rem;
-  width: 80vh;
 }
 .main-cont .info-contacto .contacto-pagina {
-  padding: 3rem;
+  padding: 2rem;
   color: white;
 }
 .main-cont .info-contacto .contacto-pagina h1 {
-  font-family: cursive;
-  font-size: 3rem;
-  padding-bottom: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  padding-bottom: 2rem;
   color: white;
 }
 .main-cont .info-contacto .contacto-pagina h3 {
-  font-family: cursive;
-  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
   padding-bottom: 2rem;
 }
 .main-cont .info-contacto .reedes {
   display: flex;
   justify-content: end;
-  padding-top: 10rem;
-  padding-right: 2rem;
+  padding: 2rem;
 }
 .main-cont .flotantes {
-  width: 80vh;
   margin: 2rem;
   background-color: rgb(112, 118, 145);
-  -webkit-padding-before: 6rem;
-          padding-block-start: 6rem;
 }
 @media screen and (max-width: 870px) {
   .main-cont .flotantes {
     flex-direction: column;
   }
   .main-cont .flotantes h2 {
-    font-family: cursive;
-    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
     padding-bottom: 3rem;
     color: rgb(2, 8, 37);
   }
@@ -221,19 +214,12 @@ h1 {
 }
 
 .main-serv {
-  min-height: 100vh; /**
-display: grid;
-grid-template-columns: 1fr 1fr ;
-grid-template-rows:  1fr 1fr ;**/
+  min-height: 100vh;
   background-color: rgb(60, 61, 67);
   display: flex;
   flex-direction: row;
   gap: 2rem;
   padding: 4rem;
-  /*grid-template-areas: 
-
-   "salidas promociones"
-   " imagen practicas" ; */
 }
 @media screen and (max-width: 870px) {
   .main-serv {

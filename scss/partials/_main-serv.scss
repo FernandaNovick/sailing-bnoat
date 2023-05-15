@@ -1,18 +1,12 @@
 .main-serv {
-    min-height: 100vh;/**
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows:  1fr 1fr ;**/
+    min-height: 100vh;
     background-color: $colorTres;
     display: flex;
     flex-direction: row;
     gap: 2rem;
     padding: 4rem;
     
-    /*grid-template-areas: 
    
-     "salidas promociones"
-     " imagen practicas" ; */
      @include mobile {
         flex-direction: column;
     }

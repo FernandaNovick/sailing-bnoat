@@ -7,8 +7,6 @@
     min-height: 100vh;
     background-color: $colorTres;
     padding-bottom: 2rem;
-   
-    }
     h1 {
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         color: $coloroscuro;
@@ -16,38 +14,34 @@
         display: flex;
         justify-content: center;
         padding: 2rem;
-      
-
-}
+    }
+   
     .cards {
         display: flex;
         gap: 0.5rem;
         @include mobile {
             flex-direction: column;
+        }
+         
         .card{
             flex: 1;
             background-color: $colorUno;
             text-align: center;
             margin: 1rem;
-            
+        
             .card-img{
-                width: 100%;
-                .link {
-                    text-decoration: none;
-                    font-family: fantasy;
-                    color:$colorUno;
-                    font-size: large;
-                 }
+                 width: 100%;
             }
-            .card h4  {
+
+            h4  {
                 font-family: cursive;
                 color: $coloroscuro;
                 font-size: x-large;
                 display: flex;
                 justify-content: center;
-            
             }
-            .card  p {
+
+            p {
                 font-family: cursive;
                 color: $coloroscuro;
                 font-size:large;
@@ -56,10 +50,19 @@
                 padding: 2rem;
                 
             }
+            .link {
+                text-decoration: none;
+                font-family: fantasy;
+                color:$colorUno;
+                font-size: large;
+
+            }
+
 
         }
     
     }
 
    
-}
+    }
+    

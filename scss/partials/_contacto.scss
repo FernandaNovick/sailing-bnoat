@@ -11,22 +11,21 @@
        
         padding-top: 5rem;
         margin: 2rem;
-        width: 80vh;
         .contacto-pagina {
-            padding: 3rem;
+            padding: 2rem;
             color: white;
           
             h1 {
-                font-family: cursive;
-                font-size: 3rem;
-                padding-bottom: 3rem;
-                color: white
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 2rem;
+                padding-bottom: 2rem;
+                color: white;
     
             
             }
              h3 {
-                font-family: cursive;
-                font-size: 1.5rem;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1rem;
                 padding-bottom: 2rem;
                 
              }
@@ -34,23 +33,20 @@
         .reedes {
             display: flex;
             justify-content:end;
-            padding-top: 10rem;
-            padding-right: 2rem;
-        
+            padding: 2rem;
          }
         
     }
     
      .flotantes {
-        width:80vh;
         margin: 2rem;
         background-color: $colorUno;
-        padding-block-start: 6rem;
         @include mobile {
             flex-direction:column ;
+       
             h2 {
-                font-family: cursive;
-                font-size: 3rem;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 2rem;
                 padding-bottom: 3rem;
                 color: $coloroscuro;
     
